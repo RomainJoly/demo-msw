@@ -9,6 +9,7 @@ export type BeersType = {
     brewers_tips : string,
     contributed_by: string
     description: string,
+    eco: boolean
     ebc : number
     first_brewed: string
     food_pairing: string[]

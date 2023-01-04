@@ -30,10 +30,10 @@ const App = () => {
             className="hover:vtmn-bg-background-secondary vtmn-bg-background-primary vtmn-shadow-200 vtmn-p-4 vtmn-my-2 vtmn-flex vtmn-flex-row vtmn-justify-between" 
             key={beer.name}
           >
-            {/* <div className="vtmn-flex vtmn-gap-2">
-              {beer.eco && <img src='https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_bi%C3%A8re.svg' height={24} width={24}/>} */}
+            <div className="vtmn-flex vtmn-gap-2">
+              {beer.eco && <img src='https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_bi%C3%A8re.svg' height={24} width={24}/>}
               <span>{beer.name}</span>
-            {/* </div> */}
+            </div>
             <span>{beer.abv}°</span>
           </li>
           )

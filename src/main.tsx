@@ -18,11 +18,11 @@ const bootstrap = async () => {
   }
 };
 
-// if (MODE !== 'test') {
-//   import('../__mocks__/browser')
-//     .then(({ worker }) => worker.start({ onUnhandledRequest: 'bypass' }))
-//     .then(bootstrap)
-//     .catch(console.error);
-// } else {
+if (MODE !== 'test') {
+  import('./__mocks__/browser')
+    .then(({ worker }) => worker.start({ onUnhandledRequest: 'bypass' }))
+    .then(bootstrap)
+    .catch(console.error);
+} else {
   bootstrap().catch(console.error);
-// }
+}
